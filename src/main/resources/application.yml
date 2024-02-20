@@ -1,0 +1,23 @@
+
+  server:
+    port: 9090
+  spring:
+    application:
+      name: school-web
+    datasource:
+      url: jdbc:mysql://localhost:3306/ecommerce-numan-turkeri?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+
+      username: root
+      password: furkan2023
+      driverClassName: com.mysql.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: update
+  main:
+    allow-circular-references: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
